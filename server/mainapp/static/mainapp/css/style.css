@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://cdn.linearicons.com/free/1.0.0/icon-font.min.css');
+
+.lnr-home{font-size: 20px;}
+.lnr-book{font-size: 20px;}
+.lnr-phone{font-size: 20px;}
+
+*{margin: 0; padding: 0}
+
+html, body{height: 100%;}
+
+body{background: #f8f8f8;}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+    font-family: 'Marck Script', cursive;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.menu li{
+	display: inline-block;
+    padding: 0 20px;
+}
+
+.menu a{
+    color: #AADF77;
+    font: italic bold 20px "Times New Roman", Arial;
+    font-size: 20px;
+	text-decoration: none;
+}
+.menu a:hover{color: #3D9200;}
+
+#logo{
+	float: left;
+}
+#logo img{width: 80px;}
+
+h1, h2, h3{
+    font-size: 25px;
+    font-weight: 400;
+    background: #eaeaea;
+    margin-bottom: 5px;
+	text-align: center;
+}
+
+h1+p{color: #707070; font-style: italic;}
+
+.product_characteristics li{color: #618F34;}
+
+input[type="text"], input[type="email"]{width: 200px; height: 18px; color: #618F34; font-size: 16px; text-transform: capitalize;}
+input[type="text"]::-webkit-input-placeholder{color: #618F34}
+input[type="text"]:focus{background: #CDE0BF;}
+input[type="email"]::-webkit-input-placeholder{color: #618F34}
+input[type="email"]:focus{background: #CDE0BF;}
+
+textarea{color: #618F34; font-size: 16px;}
+textarea:focus{background: #CDE0BF;}
+
+img{border: 2px solid grey}
+
+table{border: 1px solid #CDE0BF; border-collapse: collapse; width: 304px;}
+td{border: 1px solid #CDE0BF;}
+
+main {
+    width: 80%;
+    margin: 10px auto;	
+}
+
+.Empty {
+    height: 50px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    }
+
+@media screen and (max-width: 920px) {
+	.menu{flex-direction: column;}
+	.menu li{display: block;}
+}
+
+.item {
+	margin: 10px 10px;
+	text-align: center;
+}
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.product_characteristics {
+	list-style-type: none;
+}
+
+.Contacts {
+	list-style-type: none;
+}
