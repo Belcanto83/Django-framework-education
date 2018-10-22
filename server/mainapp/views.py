@@ -38,5 +38,6 @@ def contacts(request):
     # return render(request, 'mainapp/Contacts.html')
 
 
-def catalogue(request):
-    return render(request, 'mainapp/Catalogue/Catalogue.html')
+# def catalogue(request):
+#     # функция render может принимать третий необязательный аргумент context
+#     return render(request, 'mainapp/Catalogue/Catalogue.html')

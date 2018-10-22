@@ -50,6 +50,11 @@ header{
 }
 #logo img{width: 80px;}
 
+.date{
+    line-height: 90px;
+    text-align: center;
+}
+
 h1, h2, h3{
     font-size: 25px;
     font-weight: 400;

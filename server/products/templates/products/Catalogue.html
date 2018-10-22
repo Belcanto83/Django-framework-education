@@ -1,0 +1,42 @@
+{% extends 'master.html' %}
+
+
+{% block page_title %}
+    Product list
+{% endblock %}
+
+
+{% block page_content %}
+    <div class="items">
+        {% for product in products %}
+        <div class="item">
+            <img src="./img/Wide bracelet with beads.jpg" alt="TODO Сделать динамическую загрузку картинки!" width="200">
+            <br>
+            <a href="Wide bracelet with beads.html">{{ product }}</a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <div class="container">
+        <main>
+            <h3>Каталог изделий:</h3>
+
+            <div class="Empty"></div>
+        </main>
+        <footer>
+            <hr>
+            <p>&copy; Все права защищены</p>
+        </footer>
+    </div>
+</body>
+</html>
