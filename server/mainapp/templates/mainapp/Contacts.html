@@ -33,9 +33,11 @@
 	        <h3>Наши контакты:</h3>
 	        <br>
 	        <ul class="Contacts">
-	        	<li>Телефон: {{ phone }}</li>
-	        	<li>Адрес: {{ address }}</li>
-	        	<li>Почта: {{ mail }}</li>
+				{% for item in contacts %}
+					<li>
+						{{ item }}
+					</li>
+				{% endfor %}
 	        </ul>
 	        <div class="Empty"></div>
         </main>

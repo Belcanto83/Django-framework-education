@@ -24,9 +24,11 @@ def main(request):
 
 def contacts(request):
     context = {
-        'phone': '+7 495 555 55 55',
-        'address': 'г. Москва, Игарский проезд, 12',
-        'mail': 'gifts@mail.ru'
+        'contacts': [
+        'Телефон: +7 495 555 55 55',
+        'Адрес: г. Москва, Игарский проезд, 12',
+        'Почта: gifts@mail.ru'
+        ]
     }
     response_string = render_to_string(
         'mainapp/Contacts.html',
