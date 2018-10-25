@@ -13,9 +13,15 @@ def products_list(request):
 
 
 #TODO Get only one product
-def products_detail(request):
+def products_detail(request, idx):
     context = {}
-    with open('data/products.json', 'r', encoding='UTF-8') as file:
+    with open('products/data/products.json', 'r', encoding='UTF-8') as file:
         context = json.load(file)
 
-    return render(request, 'products/Catalogue.html', context)
+    return render(
+        request,
+        'products/Product detail.html',
+        {
+            'object': context['products'][idx]
+        }
+    )

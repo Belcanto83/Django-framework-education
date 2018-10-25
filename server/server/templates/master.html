@@ -9,22 +9,29 @@
         {% block page_title %}
         {% endblock %}
     </title>
+    <link rel="stylesheet" href="/static/mainapp/css/style.css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <img src="./img/logo.jpg" alt="Логотип" width="100">
-        </div>
-        <ul class="menu">
-            <li><a href="../index.html"><span class="lnr lnr-home"></span> Главная страница</a></li>
-            <li><a href="#"><span class="lnr lnr-book"></span> Каталог</a></li>
-            <li><a href="../Contacts.html"><span class="lnr lnr-phone"></span> Контакты</a></li>
-        </ul>
-    </header>
-    <hr>
-    <section class="page">
-        {% block page_content %}
-        {% endblock %}
-    </section>
+    <div class="container">
+        <header>
+            <div id="logo">
+                <img src="/static/mainapp/img/logo.jpg" alt="Логотип" width="100">
+            </div>
+            <ul class="menu">
+                <li><a href="/main/"><span class="lnr lnr-home"></span> Главная страница</a></li>
+                <li><a href="/products/"><span class="lnr lnr-book"></span> Каталог</a></li>
+                <li><a href="/main/contacts/"><span class="lnr lnr-phone"></span> Контакты</a></li>
+            </ul>
+        </header>
+        <hr>
+        <main>
+            {% block page_content %}
+            {% endblock %}
+        </main>
+        <footer>
+            <hr>
+    	    <p>&copy; Все права защищены</p>
+        </footer>
+    </div>
 </body>
 </html>
