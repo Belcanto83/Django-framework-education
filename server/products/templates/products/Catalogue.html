@@ -10,11 +10,7 @@
     <h3>Каталог изделий:</h3>
     <div class="items">
         {% for product in products %}
-        <div class="item">
-            <img src="/static/mainapp/img/{{ forloop.counter0 }}.jpg" alt="TODO Сделать динамическую загрузку картинки!" width="200">
-            <br>
-            <a href="/products/{{ forloop.counter0 }}">{{ product }}</a>
-        </div>
+            {% include 'products/components/item.html' with count=forloop.counter0 name=product %}
         {% endfor %}
     </div>
     <div class="Empty"></div>

@@ -9,6 +9,8 @@
         {% block page_title %}
         {% endblock %}
     </title>
+    <!--{% block page_styles %}-->
+    <!--{% endblock %}-->
     <link rel="stylesheet" href="/static/mainapp/css/style.css">
 </head>
 <body>
@@ -18,9 +20,9 @@
                 <img src="/static/mainapp/img/logo.jpg" alt="Логотип" width="100">
             </div>
             <ul class="menu">
-                <li><a href="/main/"><span class="lnr lnr-home"></span> Главная страница</a></li>
-                <li><a href="/products/"><span class="lnr lnr-book"></span> Каталог</a></li>
-                <li><a href="/main/contacts/"><span class="lnr lnr-phone"></span> Контакты</a></li>
+                <li><a href="{% url 'mainapp:main' %}"><span class="lnr lnr-home"></span> Главная страница</a></li>
+                <li><a href="{% url 'products:list' %}"><span class="lnr lnr-book"></span> Каталог</a></li>
+                <li><a href="{% url 'mainapp:contacts' %}"><span class="lnr lnr-phone"></span> Контакты</a></li>
             </ul>
         </header>
         <hr>
