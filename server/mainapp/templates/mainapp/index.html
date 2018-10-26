@@ -11,6 +11,9 @@
     	    <div id="logo">
     	    	<img src="/static/mainapp/img/logo.jpg" alt="Логотип">
     	    </div>
+			<div class="date">
+				{% now "jS M Y" %}
+			</div>
     	    <ul class="menu">
     	        <li><a href="/main/"><span class="lnr lnr-home"></span> Главная страница</a></li>
     	        <li><a href="/main/catalogue/"><span class="lnr lnr-book"></span> Каталог</a></li>
@@ -19,7 +22,7 @@
     	</header>
     	<hr>
 		<main>
-    	    <h3>Украшения ручной работы Silver Wind</h3>
+    	    <h3>{{ title }}</h3>
     	    <br>
     	    <p>Приветствую Вас в группе моих авторских украшений! :) <br>
     	    Доставка почтой России от 160 р.</p>

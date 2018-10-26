@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        {% block page_title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./img/logo.jpg" alt="Логотип" width="100">
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html"><span class="lnr lnr-home"></span> Главная страница</a></li>
+            <li><a href="#"><span class="lnr lnr-book"></span> Каталог</a></li>
+            <li><a href="../Contacts.html"><span class="lnr lnr-phone"></span> Контакты</a></li>
+        </ul>
+    </header>
+    <hr>
+    <section class="page">
+        {% block page_content %}
+        {% endblock %}
+    </section>
+</body>
+</html>

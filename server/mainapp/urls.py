@@ -1,9 +1,8 @@
 from django.urls import path
-from mainapp.views import main, contacts, catalogue
+from mainapp.views import main, contacts
 
 
 urlpatterns = [
     path('', main),
     path('contacts/', contacts),
-    path('catalogue/', catalogue)
 ]
