@@ -10,7 +10,8 @@
     <h3>Каталог изделий:</h3>
     <div class="items">
         {% for product in products %}
-            {% include 'products/components/item.html' with count=forloop.counter0 name=product %}
+            {% include 'products/components/item.html' with count=product.id name=product %}
+            <!--{% include 'products/components/item.html' with count=forloop.counter0 name=product %}-->
         {% endfor %}
     </div>
     <div class="Empty"></div>
