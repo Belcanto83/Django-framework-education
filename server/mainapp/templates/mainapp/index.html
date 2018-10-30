@@ -1,37 +1,23 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="/static/mainapp/css/style.css">
-</head>
-<body>
-    <div class="container">
-    	<header>
-    	    <div id="logo">
-    	    	<img src="/static/mainapp/img/logo.jpg" alt="Логотип">
-    	    </div>
-			<div class="date">
-				{% now "jS M Y" %}
-			</div>
-    	    <ul class="menu">
-    	        <li><a href="/main/"><span class="lnr lnr-home"></span> Главная страница</a></li>
-    	        <li><a href="/main/catalogue/"><span class="lnr lnr-book"></span> Каталог</a></li>
-    	        <li><a href="/main/contacts/"><span class="lnr lnr-phone"></span> Контакты</a></li>
-    	    </ul>
-    	</header>
-    	<hr>
-		<main>
-    	    <h3>{{ title }}</h3>
-    	    <br>
-    	    <p>Приветствую Вас в группе моих авторских украшений! :) <br>
-    	    Доставка почтой России от 160 р.</p>
-    	    <div class="Empty"></div>
-	    </main>
-    	<footer>
-    	    <hr>
-    	    <p>&copy; Все права защищены</p>
-    	</footer>
-    </div>
-</body>
-</html>
+{% extends 'master.html' %}
+
+
+<!--{% load static %}-->
+
+
+{% block page_title %}
+    Главная страница
+{% endblock %}
+
+
+<!--{% block page_styles %}-->
+<!--<link rel="stylesheet" href="{% static '/mainapp/css/style.css' %}">-->
+<!--{% endblock %}-->
+
+
+{% block page_content %}
+	<h3>{{ title }}</h3>
+	<br>
+	<p>Приветствую Вас в группе моих авторских украшений! :) <br>
+		Доставка почтой России от 160 р.</p>
+	<div class="Empty"></div>
+{% endblock %}
