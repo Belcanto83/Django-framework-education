@@ -67,14 +67,7 @@ h1+p{color: #707070; font-style: italic;}
 
 .product_characteristics li{color: #618F34;}
 
-input[type="text"], input[type="email"]{width: 200px; height: 18px; color: #618F34; font-size: 16px; text-transform: capitalize;}
-input[type="text"]::-webkit-input-placeholder{color: #618F34}
-input[type="text"]:focus{background: #CDE0BF;}
-input[type="email"]::-webkit-input-placeholder{color: #618F34}
-input[type="email"]:focus{background: #CDE0BF;}
-
-textarea{color: #618F34; font-size: 16px;}
-textarea:focus{background: #CDE0BF;}
+input[type="text"], input[type="email"], input[type="password"]{width: 200px; height: 18px; font-size: 16px;}
 
 img{border: 2px solid grey}
 
