@@ -1,0 +1,22 @@
+{% extends 'master.html' %}
+
+
+{% block page_title %}
+    Удалить продукт: {{ obj.title }}
+{% endblock %}
+
+
+{% block page_content %}
+    <h3>Удалить продукт:</h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {% if obj.category %}
+        <h3>Вы действительно хотите удалить {{ obj.category }}, {{ obj.title }} ?</h3>
+        {% else %}
+        <h3>Вы действительно хотите удалить {{ obj.title }} ?</h3>
+        {% endif %}
+        <input type="submit" value="Delete">
+    </form>
+    <div class="Empty"></div>
+{% endblock %}

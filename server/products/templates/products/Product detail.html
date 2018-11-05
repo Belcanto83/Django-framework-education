@@ -2,17 +2,16 @@
 
 
 {% block page_title %}
-    Главная страница
+    {{ product }}
 {% endblock %}
 
 
 {% block page_content %}
     <h1>Описание товара</h1>
-    <p>{{ object }}</p>
+    <p>{{ product }}</p>
     <br>
     <h2>Характеристики товара</h2>
     <ul class="product_characteristics">
-        <li><b>Ширина: 3.0 см</b></li>
         <li><b>Размер регулируется</b></li>
         <li>Вощеная нить, производство Италия</li>
         <li>Цвета нитей и бусин в ассортименте</li>
@@ -20,7 +19,8 @@
     <br>
     <h3>Подробное описание товара</h3>
     <p>
-        <a href="../Catalogue/img/Wide bracelet with agate.jpg" target="_blank"><img src="../Catalogue/img/Wide bracelet with agate.jpg" alt="Широкий браслет с агатом" width="300"></a><br>
+        <a href="{{ product.image.url }}" target="_blank">
+        <img src="{{ product.image.url }}" alt="Широкий браслет с агатом" width="300"></a><br>
     </p>
 
     <table>
