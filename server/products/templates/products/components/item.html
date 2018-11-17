@@ -1,5 +1,5 @@
 <div class="item">
-    <img src="/static/mainapp/img/{{ count }}.jpg" alt="TODO Сделать динамическую загрузку картинки!" width="200">
+    <img src="/static/mainapp/img/{{ count }}.jpg" alt="Картинка должна загружаться динамически!" width="200">
     <br>
-    <a href="{% url 'products:detail' idx=count %}">{{ name }}</a>
+    <a href="{% url 'products:detail' pk=count %}">{{ name }}</a>
 </div>
