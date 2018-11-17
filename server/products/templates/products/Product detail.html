@@ -37,6 +37,9 @@
             <td>на Ваш выбор</td>
         </tr>
     </table>
+    <br>
+    <a href="{% url 'basket:add_to_basket' item=product.id %}">Добавить в корзину</a>
+
     <div class="Empty"></div>
 {% endblock %}
 
