@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'products',
     'images',
     'accounts',
+    'basket',
 
     'django.contrib.admin',
     'django.contrib.auth',

@@ -45,6 +45,9 @@ class Product(models.Model):
         decimal_places=2,
         default=0,
     )
+    quantity = models.PositiveSmallIntegerField(
+        default=0
+    )
     modified = models.DateTimeField(
         auto_now=True,
     )

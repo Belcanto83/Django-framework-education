@@ -1,0 +1,26 @@
+<form action="" method="POST" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+    {% for err in form.not_field_errors %}
+    <div class="alert alert-danger" role="alert">
+        <span>{{ err }}</span>
+    </div>
+    {% endfor %}
+
+    {% for field in form %}
+    <label for="{{ form.name }}">{{ field.label }}</label>
+    {{ field }}
+
+    {% for err in field.errors %}
+    <small class="field_error">{{ err }}</small>
+    {% endfor %}
+
+    <!--<input type="text" placeholder="Имя"><br>-->
+    <!--<input type="password" placeholder="Пароль"><br>-->
+    <!--<input type="submit" value="Войти">-->
+    <!--{{ form.as_table }}-->
+
+    {% endfor %}
+    <input type="submit" value="Enter">
+</form>

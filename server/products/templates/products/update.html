@@ -2,13 +2,13 @@
 
 
 {% block page_title %}
-    Авторизация пользователя
+    Обновить продукт: {{ obj.title }}
 {% endblock %}
 
 
 {% block page_content %}
-    <h3>Войти в аккаунт:</h3>
-    <div class="Registration_form">
+    <h3>Создать продукт:</h3>
+    <div class="Edit_product_form">
         {% include 'form.html' with form=form %}
     </div>
     <div class="Empty"></div>
